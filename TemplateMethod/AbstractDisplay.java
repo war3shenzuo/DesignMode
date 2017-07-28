@@ -7,8 +7,9 @@ public abstract class AbstractDisplay {
 	public abstract void run();
 
 	public abstract void close();
-
-	public void Display() {
+	
+	
+	public final void Display() {
 
 		this.open();
 

@@ -6,14 +6,13 @@ import java.util.List;
 public class BookShelf implements Aggregate {
 
 	private List<Book> books;
-	private int last = 0;
 
 	public BookShelf(int maxsize) {
-		this.books = new ArrayList<>();
+		this.books = new ArrayList<>(maxsize);
 	}
 
 	public int getLength() {
-		return last;
+		return books.size();
 	}
 
 	public Book getBookAt(int index) {
@@ -22,7 +21,6 @@ public class BookShelf implements Aggregate {
 
 	public void appendBook(Book book) {
 		this.books.add(book);
-		last++;
 	}
 
 	@Override

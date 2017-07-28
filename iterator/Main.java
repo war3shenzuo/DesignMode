@@ -11,7 +11,6 @@ public class Main{
 		bookshelf.appendBook(new Book("狮吼功"));
 		bookshelf.appendBook(new Book("七伤拳"));
 
-
 		Iterator it = bookshelf.iterator();
 		while(it.hasNext()){
 			Book book = (Book)it.next();

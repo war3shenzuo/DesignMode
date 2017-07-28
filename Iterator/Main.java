@@ -16,7 +16,6 @@ public class Main{
 			Book book = (Book)it.next();
 			System.out.println(book.getName());
 		}
-		
 	}
 
 }
